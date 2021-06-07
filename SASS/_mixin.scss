@@ -1,0 +1,41 @@
+@mixin fuentes {
+    font-size: 1.3rem;
+    color: #D6D6D3;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-size: 1.6rem;
+    margin: 0px;
+}
+
+@mixin imgsucursales {
+    margin: 8px;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin infsucursales {
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    border: 8px solid #F5F5BA;
+    margin: 2px;
+}
+
+@mixin divP576 {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+@mixin divP375 {
+    font-size: 0.9rem;
+    padding: 10px; 
+    text-align: center; 
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

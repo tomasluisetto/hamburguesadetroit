@@ -1,0 +1,590 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+/*-------------------------------- HEADER --------------------------------*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( circle, black 40%, rgb(121, 4, 4) 80%);
+    padding: 30px
+}
+
+.tituloPagina {
+    font-family: 'Londrina Solid', cursive;
+    color: red;
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+.subtituloPagina {
+    color: moccasin;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.iconosHeader {
+    font-size: 2rem;
+    margin: 5px
+}
+
+#navbarNav {
+    background-color: #ff0000;
+}
+
+.nav-link {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+/*---------------------------------- FOOTER ----------------------------------*/
+
+
+.footerPagina {
+    background-image: radial-gradient( circle, black 40%, rgb(121, 4, 4) 80%);
+}
+
+.iconosFooter {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.textoFooter {
+    font-size: 1rem;
+}
+
+.nombreFooter {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: bold;
+}
+
+.footerPagina .col-sm-2 {
+    padding: 35px;
+}
+
+.footerPagina .col-sm-8 {
+    padding: 50px;
+}
+
+/*---------------------------------- INDEX ----------------------------------*/
+
+.textoPrincipal {
+    color: red;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Carter One', cursive;
+    -webkit-text-stroke: 0.1px;
+    -webkit-text-stroke-color: black;
+    animation-duration: 5s;
+    animation-name: desaparecer;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}    
+
+.botonPrincipal {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    text-decoration: none;
+    border: solid 2px white;
+    margin: 10px 10px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(252, 239, 239);
+    transition: 0.3s font-size ease-in;
+}
+
+.botonPrincipal:hover{
+    font-size: 2rem;
+    color: rgb(163, 4, 4);
+}
+
+#seccionSecundaria {
+    background-color: rgba(226, 224, 224, 0.932);
+}
+
+#novedades {
+    color: #fc7777;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 3rem;
+    background-color: #c10819;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgba(39, 38, 38, 0.808);
+    transition: all 2s;
+}
+
+#novedades:hover {
+    transform: scaleY(1.2);
+    color: #751b1b;
+    
+}
+
+.tituloNovedades {
+    color: #f5c366;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+}
+
+.fuentesNovedades {
+    font-family: 'Mate SC', serif;
+    font-size: 1.4rem;
+    color: rgb(230 211 211);
+    letter-spacing: 1px;
+}
+
+.card-group .card {
+    background: #82030f; 
+    margin: 5px;
+}
+
+.botonNuevo {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/*---------------------------------------- NOSOTROS ------------------------------------*/
+
+.contenedorNosotros {
+    margin-bottom: 15px;
+}
+
+.subtitulosSecciones {
+    font-family: 'Knewave', cursive;
+    padding: 25px 25px 10px 25px;
+    text-align: center;
+    font-size: 3rem;
+    color: #750d0d;
+    border-bottom: solid 5px #750d0d;
+    margin: 0px 10px 0px 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.pNosotros {
+    font-family: 'PT Serif', serif;
+    color: #560404;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+    background-color: #b5b5b5;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.columnaPrimera {
+    padding-bottom: 2.5rem;
+    border-bottom: solid 5px coral;
+}
+
+.columnaSegunda {
+    padding-top: 2.5rem;
+}
+
+.imagenesNosotros {
+    border: rgb(255 29 35) solid 3px;
+}
+
+
+.li1 {
+    font-family: 'Fredoka One', cursive;
+    color: #ea2336cc;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    transition: all 2s;
+}
+
+.li1:hover {
+    font-size: 1.7rem;
+    color: #d30505;
+}
+
+
+/*---------------------------------------- HAMBURGUESAS ------------------------------------*/
+
+.nuestraHamburguesa {
+    width: 800px; 
+    height: 500px;
+    display: block;
+    margin: 0px auto 50px;
+    border: rgb(255 29 35) solid 5px;
+}
+ 
+.h4TituloHamburguesa {
+     font-family: 'Marko One', serif;
+     text-align: center;
+     font-size: 1.8rem;
+     padding: 10px;
+     color: wheat;  
+}
+ 
+.pInfoHamburguesa {
+     font-family: 'Oswald', sans-serif;
+     color: #d6ae7a;
+     font-size: 1.4rem;
+     font-weight: bold;
+     text-align: center;
+     padding: 20px;
+     letter-spacing: 1px;
+}
+
+.hamburguesaMenu {
+    padding-bottom: 10px;
+}
+
+.mainHamburguesas .card {
+    background-image: url(../Assets/depositphotos_6908971-stock-photo-red-background.jpg);
+}
+
+.card-body .btn {
+    font-size: 1.3rem; 
+    font-weight: bold;
+}
+
+
+/*---------------------------------------- SUCURSALES ------------------------------------*/
+
+.mainSucursales {
+    width: 100%;
+    height: 900px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "img1 parrafo1"
+    "img2 parrafo2"
+    "img3 parrafo3";
+}
+ 
+.imagenSucursal1 {
+    background-image: url(../Assets/hamburgueseria1.jpg);
+    margin: 8px;
+    grid-area: img1;
+    background-position: center;
+    background-size: cover;
+}
+ 
+.imagenSucursal2 {
+    background-image: url(../Assets/hamburgueseria2.jpg);
+    margin: 8px;
+    grid-area: img2;
+    background-position: center;
+    background-size: cover;
+}
+ 
+.imagenSucursal3 {
+    background-image: url(../Assets/hamburgueseria3.jpg);
+    margin: 8px;
+    grid-area: img3;
+    background-position: center;
+    background-size: cover;
+}
+ 
+.divP1 {
+    background-image: url(../Assets/bordo.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: parrafo1;
+    padding: 30px;
+    border: 8px solid #F5F5BA;
+    margin: 2px;
+}
+ 
+.divP1 p{
+    font-size: 1.3rem;
+    color: #D6D6D3;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-size: 1.6rem;
+    margin: 0px;
+}
+ 
+.divP2 {
+    background-image: url(../Assets/bordo.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: parrafo2;
+    padding: 30px;
+    border: 8px solid #F5F5BA;
+    margin: 2px;
+}
+ 
+.divP2 p{
+    font-size: 1.3rem;
+    color: #D6D6D3;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-size: 1.6rem;
+    margin: 0px;
+}
+ 
+.divP3 {
+    background-image: url(../Assets/bordo.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: parrafo3;
+    padding: 30px;
+    border: 8px solid #F5F5BA;
+    margin: 2px;
+}
+ 
+.divP3 p{
+    font-size: 1.3rem;
+    color: #D6D6D3;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-size: 1.6rem;
+    margin: 0px;
+}
+ 
+.barrios {
+    font-family: 'Boogaloo', cursive;
+    color: #f78b8b;
+    font-size: 2.5rem;
+}
+
+
+/*---------------------------------------- CONTACTO ------------------------------------*/
+
+.datosFormulario {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 15px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgba(39, 38, 38, 0.808);
+}
+
+.botonesFormulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botonFormulario {
+    padding: 10px;
+    margin: 15px;
+    background-color:#f70d22; 
+    font-weight: bold;
+}
+
+.mainContacto {
+    margin: 20px;
+}
+
+/*---------------------------------------- PEDIDO ------------------------------------*/
+
+.datosFormulario2 {
+    font-family: 'Carter One', cursive;
+    background-color: #f7b8b8;
+    width: 185px;
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+    color: #ce324d;
+    border: solid 3px #e7d5cf;
+}
+
+.barrio {
+    margin: 5px auto 25px;
+    padding: 8px;
+}
+
+.inputChico {
+    margin: 5px auto 10px;
+}
+
+.boton_Pedido {
+    font-size: 1rem;
+    transition: all 5s;
+}
+
+.boton_Pedido:hover{
+    transform: scale(1.2);
+}
+
+
+/* ------------------------MEDIAQUERIES------------------------ */ 
+
+@media (min-width: 375px) and (max-width: 575px) {
+    /* ----SECCION INDEX ----*/
+        .nav-link {
+            font-size: 0.9rem;
+        }
+
+        #novedades {
+            font: 2.8rem;
+        }
+
+        .textoPrincipal {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        .botonPrincipal {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .botonPrincipal:hover{
+            font-size: 1.3rem;
+            color: rgb(163, 4, 4);
+        }
+        
+
+    /* ----SECCION NOSOTROS ----*/    
+        .imagenesNosotros {
+            width: 22rem;
+        }
+        .pNosotros {
+            padding: 25px;
+        }
+    /* ----SECCION HAMBURGUESAS ----*/
+        .nuestraHamburguesa{
+            display: none;
+        }
+
+        .subtitulosSecciones {
+            font-size: 2.8rem;
+            width: 93%;
+        }
+
+        .mainHamburguesas .card {
+            margin-bottom: 10px;
+        }
+
+    /* ----SECCION SUCURSALES ----*/
+        .barrios {
+            font-size: 1.5rem;
+        }
+
+        .divP3 p {
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+
+        .divP2 p {
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+
+        .divP1 p {
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+}
+
+@media (min-width: 576px) and (max-width: 900px) {
+
+    /* ----SECCION INDEX ----*/
+        .nav-link {
+            font-size: 1.4rem;
+        }
+
+
+        .col-sm .card-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tituloNovedades{
+            font-size: 1.5rem;
+        }
+
+        
+        .fuentesNovedades {
+            font-size: 1.8rem;
+        }
+
+        .textoPrincipal {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .botonPrincipal {
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+
+        .botonPrincipal:hover{
+            font-size: 1.5rem;
+            color: rgb(163, 4, 4);
+        }
+
+    /* ----SECCION HAMBURGUESAS ----*/
+        .nuestraHamburguesa{
+            width: 500px;
+        }
+
+        .h4TituloHamburguesa {
+            font-size: 1.6rem;
+        }
+
+        .mainHamburguesas .col-sm-4 {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+    /* ----SECCION SUCURSALES ----*/
+        .barrios {
+            font-size: 1.9rem;
+        }
+
+        .divP3 p {
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+
+        .divP2 p {
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+
+        .divP1 p {
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+
+}
