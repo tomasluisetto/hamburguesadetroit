@@ -511,7 +511,7 @@ $alimentos: (
         #navbarNav {
             .nav-link {
                 font-size: 0.8rem;
-                -webkit-text-stroke: 0.10px;
+                -webkit-text-stroke: 0.1px;
                 -webkit-text-stroke-color: black;
                 font-weight: bold;
             }
@@ -528,6 +528,8 @@ $alimentos: (
         .textoPrincipal {
             font-size: 1.8rem;
             letter-spacing: 2px;
+            -webkit-text-stroke: 0.1px;
+            -webkit-text-stroke-color: black;
         }
 
         .botonPrincipal {

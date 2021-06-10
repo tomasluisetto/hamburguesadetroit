@@ -545,6 +545,8 @@ header {
   .textoPrincipal {
     font-size: 1.8rem;
     letter-spacing: 2px;
+    -webkit-text-stroke: 0.1px;
+    -webkit-text-stroke-color: black;
   }
 
   .botonPrincipal {
