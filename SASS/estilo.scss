@@ -446,11 +446,6 @@ $alimentos: (
     padding: ($padding1)-2;
 }
 
-.inputChico {
-    margin: 5px auto 10px;
-    display: block;
-}
-
 .boton_Pedido {
     font-size: 1rem;
     transition: all 5s;
@@ -483,6 +478,14 @@ $alimentos: (
     margin-bottom: 10px;
 }
 
+.inputCantidad {
+    text-align: center;
+}
+
+.divPedido {
+    margin-bottom: 2rem;
+}
+
 @each $pedido in royale2 petit2 nostra2 {
     .hamburguesaPedido.#{$pedido} {
         @if $pedido == royale2 {
@@ -505,12 +508,151 @@ $alimentos: (
 
 /* ------------------------MEDIAQUERIES------------------------ */ 
 
+@media (max-width: 350px) {
+    /* ----SECCION INDEX ----*/
+
+    #navbarNav {
+        .nav-link {
+            font-size: 0.7rem;
+            -webkit-text-stroke: 0.1px;
+            -webkit-text-stroke-color: black;
+            font-weight: bold;
+        }
+    }    
+
+    #novedades {
+        font-size: 1.5rem;
+    }
+
+    .tituloPagina {
+        font-size: 2.5rem;
+    }
+
+    .subtituloPagina {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+
+    .iconosHeader {
+        font-size: 25px;
+    }
+
+    .iconosFooterP {
+        display: none;
+    }
+
+    .textoPrincipal {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 0.1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .botonPrincipal {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .botonPrincipal:hover{
+        font-size: 1rem;
+        color: $color-boton;
+    }
+
+    .card-group .card .tituloNovedades{
+        font-size: 1.3rem;
+    }
+
+    .card-group .card .fuentesNovedades {
+        font-size: 1rem;
+    }
+
+    /* ----SECCION NOSOTROS ----*/
+
+    .seccionNosotros {
+        display: none;
+    }
+
+    .imagenesNosotros {
+        width: 18rem;
+    }
+
+    .li1 {
+        font-size: 1.5rem;
+        transition: all 2s;
+    }
+    
+    .li1:hover {
+        font-size: 1.8rem;
+        color: #d30505;
+    }
+
+    .subtitulosSecciones {
+    font-size: 2.2rem;
+    }
+
+    /* ----SECCION HAMBURGUESA ----*/
+    .nuestraHamburguesa {
+        width: 275px;
+        height: 230px;
+    }
+    
+    .cardHamburguesa {
+        margin-bottom: 25px;
+    }
+
+    /* ----SECCION SUCURSALES ----*/
+    .imagenSucursal1 {
+        display: none;
+    }
+
+    .imagenSucursal2 {
+        display: none;
+    }
+
+    .imagenSucursal3 {
+        display: none;
+    }
+
+    .mainSucursales {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .divP1 {
+        margin-bottom: 10px;
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .divP2 {
+        margin-bottom: 10px;
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .divP3 {
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    /* ----SECCION PEDIDO ----*/
+    .seccionPedido {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 @media (min-width: 350px) and (max-width: 575px) {
     /* ----SECCION INDEX ----*/
     
         #navbarNav {
             .nav-link {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 -webkit-text-stroke: 0.1px;
                 -webkit-text-stroke-color: black;
                 font-weight: bold;
@@ -611,7 +753,7 @@ $alimentos: (
         }
 }
 
-@media (min-width: 576px) and (max-width: 900px) {
+@media (min-width: 575px) and (max-width: 900px) {
 
     /* ----SECCION INDEX ----*/
         #navbarNav {
