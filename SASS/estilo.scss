@@ -40,7 +40,7 @@ header {
     font-family: 'Suez One', serif;
     color: $primario;
     -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: $cuarto;
     font-size: 5rem;
     margin: -30px;
 }
@@ -64,7 +64,7 @@ header {
     .nav-link {
         font-family: 'Staatliches', cursive;
         -webkit-text-stroke: 0.1px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: $cuarto;
         font-size: 1.6rem;
         font-weight: bold;
     }
@@ -108,7 +108,7 @@ header {
     font-size: 4rem;
     font-family: 'Carter One', cursive;
     -webkit-text-stroke: 0.1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: $cuarto;
     animation-duration: 5s;
     animation-name: desaparecer;
     animation-iteration-count: infinite;
@@ -129,7 +129,7 @@ header {
     color: white;
     font-size: 1.5rem;
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: $cuarto;
     text-decoration: none;
     border: solid 2px white;
     margin: 10px 10px;
@@ -515,7 +515,7 @@ $alimentos: (
         .nav-link {
             font-size: 0.7rem;
             -webkit-text-stroke: 0.1px;
-            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-color: $cuarto;
             font-weight: bold;
         }
     }    
@@ -545,7 +545,7 @@ $alimentos: (
         font-size: 1.6rem;
         letter-spacing: 2px;
         -webkit-text-stroke: 0.1px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: $cuarto;
     }
 
     .botonPrincipal {
@@ -654,7 +654,7 @@ $alimentos: (
             .nav-link {
                 font-size: 0.9rem;
                 -webkit-text-stroke: 0.1px;
-                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-color: $cuarto;
                 font-weight: bold;
             }
         }    
@@ -671,7 +671,7 @@ $alimentos: (
             font-size: 1.8rem;
             letter-spacing: 2px;
             -webkit-text-stroke: 0.1px;
-            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-color: $cuarto;
         }
 
         .botonPrincipal {
